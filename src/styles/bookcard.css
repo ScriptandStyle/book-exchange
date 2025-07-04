@@ -1,0 +1,134 @@
+/* Book Card Styles */
+.book-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book-cover {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .book-card:hover .book-cover img {
+    transform: scale(1.05);
+  }
+  
+  .book-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+  
+  .book-card:hover .book-actions {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .action-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .action-btn:hover {
+    transform: scale(1.1);
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .wishlist-btn:hover {
+    color: #e74c3c;
+  }
+  
+  .exchange-btn:hover {
+    color: #4ca1af;
+  }
+  
+  .book-info {
+    padding: 20px;
+  }
+  
+  .book-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .book-author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .book-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+  
+  .book-condition {
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #555;
+  }
+  
+  .book-location {
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .view-details-btn {
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+    background: #4ca1af;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .view-details-btn:hover {
+    background: #3a7d8a;
+  }
